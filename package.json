@@ -9,10 +9,6 @@
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "start": "node dist/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SamBroner/frames-express.git"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1"
@@ -28,10 +24,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SamBroner/frames-express/issues"
-  },
-  "homepage": "https://github.com/SamBroner/frames-express#readme",
   "engines": {
     "node": "16.x"
   }
