@@ -68,14 +68,12 @@ app.get('/frame', (req, res) => {
         imageUrl: 'https://i.imgur.com/osEKmhB.png',
         buttons: ['get', 'button2'],
     };
-    res.set('Cache-Control', 'private, no-cache, no-store, max-age=0, must-revalidate');
 
     res.status(200).send(frameGenerator(frameProps));
 });
 
 app.post('/frame', (req, res) => {
 
-    console.log("sup");
     console.log(req.body)
 
     const frameProps: IFrameProps = {
@@ -83,6 +81,7 @@ app.post('/frame', (req, res) => {
         buttons: ['post', 'button2'],
 
     };
+    
     res.status(200).send(frameGenerator(frameProps));
 });
 
